@@ -1,0 +1,23 @@
+<div class='container new-feels'>
+  <h2 >How are you feeling?</h2>
+  <form id='create-new-feel' action='/feels' method='POST'>
+    <p class='input-feel'><label class='feels-label' for="fatigue">fatigue:</label>
+    <input type="range" name='fatigue' value="1"></p>
+
+    <p class='input-feel'><label class='feels-label' for="hunger">hunger:</label>
+    <input type="range" name='hunger' value="1"></p>
+
+    <p class='input-feel'><label class='feels-label' for="thirst">thirst:</label>
+    <input type="range" name='thirst' value="1"></p>
+
+    <p class='input-feel'><label class='feels-label' for="discomfort">do you feel any pain or discomfort?</label><br>
+    <input type="range" name='discomfort_rating' value="1"></p>
+    <input type='text' name='discomfort_location' placeholder='where?'><br>
+
+    <p class='input-feel'><label class='feels-label' for="comfort">what do you feel good about today?</label><br>
+    <input type="range" name='comfort_rating' value="1"></p>
+    <input type='text' name='comfort_location' placeholder='where?'><br>
+
+    <span class='input-feel post-new-feel'><input type='submit' value=':::'></span>
+  </form>
+</div>

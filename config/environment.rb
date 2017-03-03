@@ -7,6 +7,7 @@ require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 
 # Require gems we care about
 require 'rubygems'
+require 'dotenv/load'
 
 require 'uri'
 require 'pathname'
@@ -21,6 +22,11 @@ require "sinatra/reloader" if development?
 require 'erb'
 require 'faker'
 require 'pry-byebug'
+require 'bcrypt'
+
+require 'omniauth'
+require 'omniauth/google_oauth2'
+# require 'openid/store/filesystem'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
@@ -38,6 +44,11 @@ configure do
   # Set the views to
   set :views, File.join(Sinatra::Application.root, "app", "views")
 end
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+use OmniAuth::Builder do
+  provider :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"], {prompt: "consent", scope: 'userinfo.email'}
+end
+
 
 # Set up the controllers and helpers
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }

@@ -1,0 +1,12 @@
+<div class='container user-info'>
+  <h2 >Please enter your information:</h2>
+  <form action='/users/<%= @user.id %>/edit' method='POST'>
+    <input type='hidden' name='_method' value='put'>
+    <input type='text' name='name' placeholder='name'>
+    <input type='text' name='birthdate' placeholder='YYYY-MM-DD HH-MM-SS'>
+    <input type='text' name='gender' placeholder='gender'>
+
+
+    <input type='submit' value='Update'>
+  </form>
+</div>

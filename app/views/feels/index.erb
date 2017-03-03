@@ -1,0 +1,5 @@
+<div class='container all-feels'>
+  <% @user.feels.each do |feel| %>
+   <%= erb :'/feels/show',  locals: { feel: feel }%>
+  <% end %>
+</div>

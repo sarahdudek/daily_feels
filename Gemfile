@@ -15,6 +15,10 @@ gem 'rake'
 gem 'shotgun', '~>0.9.1'
 gem 'pry-byebug'
 gem 'faker'
+gem 'bcrypt'
+
+gem 'dotenv'
+gem 'omniauth-google-oauth2'
 
 group :test do
   gem 'shoulda-matchers'
