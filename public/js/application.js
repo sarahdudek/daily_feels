@@ -13,7 +13,7 @@ $(document).ready(function(){
       data: data,
     })
     .done(function(response) {
-      $form.prepend(response);
+      $form.parent().siblings('.all-feels').prepend(response);
     })
     .fail(function(){
       console.log("here")
