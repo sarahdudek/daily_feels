@@ -9,9 +9,8 @@ body {
 }
 
 .header {
-  padding: 15px;
+  padding: 10px;
   margin: 10px;
-  text-align: center;
 }
 
 h2, h3  {
@@ -26,6 +25,7 @@ h2, h3  {
   background-image: url("http://media.istockphoto.com/illustrations/watercolor-seamless-pattern-with-strawberries-mango-leafs-illustration-id534224957?s=235x235");
   text-shadow: white 2px 2px;
   height: 300px;
+  text-align: center;
 }
 
 
@@ -42,9 +42,8 @@ h2, h3  {
 
 
 .all_feels {
-  margin: 20px;
   padding: 10px;
-
+  margin-right: 60%;
 }
 
 .feel {
@@ -52,8 +51,14 @@ h2, h3  {
   margin: 10px;
 }
 
-.new-feel {
-  height: 10px;
+.new-feels {
+  height: 500px;
+  margin-left: 25%;
+}
+
+.top-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .link {
