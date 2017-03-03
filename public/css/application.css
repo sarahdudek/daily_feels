@@ -2,7 +2,6 @@ body {
   font-family: 'Baloo', cursive;
   background-color: #FFE19C;
   color: #3A3042;
-  display: flex;
 }
 
 .error {
@@ -12,29 +11,49 @@ body {
 .header {
   padding: 15px;
   margin: 10px;
+  text-align: center;
+}
 
+h2, h3  {
+  background-color: #F48668;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px;
+  text-align: center;
 }
 
 .welcome {
-  position: absolute;
-  text-align: center;
-  width: 100%;
+  background-image: url("http://media.istockphoto.com/illustrations/watercolor-seamless-pattern-with-strawberries-mango-leafs-illustration-id534224957?s=235x235");
+  text-shadow: white 2px 2px;
+  height: 300px;
 }
 
 
 .container {
   padding: 15px;
-  margin: 10px;
-}
-
-.feel {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 400px;
-  padding: 15px;
-  margin: 10px;
-  display: block;
   border: 2px dotted #FF784F;
   background-color: #FCD0A1;
   border-radius: 10px;
+  vertical-align: top;
+}
+
+
+.all_feels {
+  margin: 20px;
+  padding: 10px;
+
+}
+
+.feel {
+  padding: 15px;
+  margin: 10px;
+}
+
+.new-feel {
+  height: 10px;
 }
 
 .link {
@@ -51,27 +70,22 @@ body {
   text-decoration: none;
 }
 
-.post-new-feel {
-  margin: 20px;
-  padding: 10px;
-}
 
 .post-new-feel  {
-  display: block;
+  display: inline-block;
   width: 90px;
   background: #FF784F;
   margin: 15px;
   padding: 1px;
   text-align: center;
   border-radius: 5px;
-  color: #EDFFD9;
+  color: black;
   font-weight: bold;
   text-decoration: none;
 }
 
-.top-right {
-  position: right;
+.big-div {
+  display:flex;
+  justify-content: center;
 }
-
-
 

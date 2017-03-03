@@ -14,6 +14,7 @@ $(document).ready(function(){
     })
     .done(function(response) {
       $form.parent().siblings('.all-feels').prepend(response);
+      $form.trigger("reset");
     })
     .fail(function(){
       console.log("here")

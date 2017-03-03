@@ -25,9 +25,8 @@ get '/users/edit' do
 end
 
 put '/users/:id/edit' do
-  p params
   @user = User.find_by(id: params[:id])
-  @user.assign_attributes(name: params[:name], birthdate: params[:birthdate], gender: params[:gender])
+  @user.update_attributes(name: params[:name], birthdate: params[:birthdate], gender: params[:gender])
 
   redirect "/users/#{@user.id}"
 end

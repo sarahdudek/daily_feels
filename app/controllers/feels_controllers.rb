@@ -10,7 +10,7 @@ post '/feels' do
   if request.xhr?
     if @feel.save
       p "Hello"
-      erb :'/feels/show', layout: false, locals: { feel: @feel}
+      erb :'/feels/show', layout: false, locals: { feel: @feel }
     else
       status 422
       @errors = @user.errors.full_messages
