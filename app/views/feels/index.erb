@@ -1,7 +1,7 @@
 <div class='container all-feels'>
   <% @user.feels.each do |feel| %>
   <div class='container feel'>
-    <h3>This is how you were feeling on <%= feel.created_at %>:</h1>
+    <h3>This is how you were feeling on <%= long_form_date(feel.created_at) %>:</h1>
     <p>Level of fatigue: <%= feel.fatigue_rating %></p>
     <p>Level of hunger: <%= feel.hunger_rating %></p>
     <p>Level of thirst: <%= feel.thirst_rating %></p>
