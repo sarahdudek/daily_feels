@@ -11,6 +11,9 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+
+  <meta name="google-signin-client_id" content="804252603169-dhra3vuoua9pchgv36regtub44cvl3l1.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
@@ -18,25 +21,5 @@
 </head>
 <body>
   <%= yield %>
-  <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '389879508047048',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-    connectToFacebook();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-  </script>
-
 </body>
 </html>
