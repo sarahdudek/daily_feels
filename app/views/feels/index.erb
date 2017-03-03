@@ -1,0 +1,12 @@
+<div class='container all-feels'>
+  <% @user.feels.each do |feel| %>
+  <div class='container feel'>
+    <h3>This is how you were feeling on <%= feel.created_at %>:</h1>
+    <p>Level of fatigue: <%= feel.fatigue_rating %></p>
+    <p>Level of hunger: <%= feel.hunger_rating %></p>
+    <p>Level of thirst: <%= feel.thirst_rating %></p>
+    <p>Level of <%= feel.discomforts.location %> pain: <%= feel.discomforts.rating %></p>
+
+  </div>
+  <% end %>
+</div>

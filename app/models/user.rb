@@ -3,10 +3,10 @@ class User < ActiveRecord::Base
 
   has_many :feels, foreign_key: :feeler_id, class_name: "Feel"
 
-  validates :username, :email, presence: true, uniqueness: true
-  validates :first_name, :last_name, :birthdate, :gender, presence: true
+  # validates :username, :email, presence: true, uniqueness: true
+  # validates : name, :birthdate, :gender, presence: true
 
-  validate :validate_password
+  # validate :validate_password
 
   def password
     @password ||= Password.new(self.hashed_password)
@@ -39,12 +39,8 @@ class User < ActiveRecord::Base
     data = access_token.info
     user = User.where(:email => data["email"]).first
 
-    # Uncomment the section below if you want users to be created if they don't exist
     unless user
-        user = User.create(name: data["name"],
-           email: data["email"],
-           password:("x" * 30)
-        )
+        user = User.create(email: data["email"])
     end
     user
   end

@@ -1,0 +1,13 @@
+<% if @user.name %>
+  <h1 class='header welcome'>Welcome, <%= @user.name %>!</h1>
+<% else %>
+  <h1 class='header welcome'>Welcome to dailyfeels</h1>
+<% end %>
+
+<a class='link update-link' href="/users/edit">Update User Information</a>
+
+<%= erb :'/feels/new' %>
+
+<%= erb :'/feels/index' %>
+
+
