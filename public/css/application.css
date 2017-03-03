@@ -1,0 +1,75 @@
+body {
+  font-family: 'Baloo', cursive;
+  background-color: #FFE19C;
+  color: #3A3042;
+  display: flex;
+}
+
+.error {
+  color: red;
+}
+
+.header {
+  padding: 15px;
+  margin: 10px;
+
+}
+
+.welcome {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+
+.container {
+  padding: 15px;
+  margin: 10px;
+}
+
+.feel {
+  max-width: 400px;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  border: 2px dotted #FF784F;
+  background-color: #FCD0A1;
+  border-radius: 10px;
+}
+
+.link {
+  display: block;
+  width: 90px;
+  background: #FF784F;
+  margin: 15px;
+  padding: 1px;
+  text-align: center;
+  border-radius: 5px;
+  color: #EDFFD9;
+  font-weight: bold;
+  text-decoration: none;
+  position: fixed;
+}
+
+.post-new-feel {
+  margin: 20px;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+.post-new-feel  {
+  display: block;
+  width: 90px;
+  background: #FF784F;
+  margin: 15px;
+  padding: 1px;
+  text-align: center;
+  border-radius: 5px;
+  color: #EDFFD9;
+  font-weight: bold;
+  text-decoration: none;
+  position: fixed;
+}
+
+
+
