@@ -17,6 +17,9 @@ gem 'pry-byebug'
 gem 'faker'
 gem 'bcrypt'
 
+gem 'dotenv'
+gem 'omniauth-google-oauth2'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
